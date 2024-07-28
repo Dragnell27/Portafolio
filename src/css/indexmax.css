@@ -1,0 +1,116 @@
+@media (max-width: 768px) {
+    .experience{
+        width: 98%;
+    }
+    .img-container {
+        height: 40vh;
+    }
+    .info{
+        font-size: 10px;
+    }
+    .animated{
+        font-size: 15px;
+    }
+    .header, .logo{
+        display: none;
+    }
+
+    .toggle-btn{
+        display: block;
+    }
+
+    .sidebar{
+        display: block;
+        z-index: 100;
+    }
+
+    .header {
+        width: 250px;
+        height: 100vh;
+        background-color: #333;
+        color: #fff;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        transition: left 0.3s;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .header.open {
+        left: 0; /* Muestra la barra lateral */
+    }
+
+    .header a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 15px;
+        display: block;
+        transition: background-color 0.3s;
+    }
+
+    .header a:hover {
+        background-color: #575757;
+    }
+
+    .content {
+        margin-left: 20px;
+        padding: 20px;
+        flex-grow: 1;
+        transition: margin-left 0.3s;
+    }
+
+    .content.shift {
+        margin-left: 270px; /* Ajusta el contenido cuando el sidebar está abierto */
+    }
+
+    .h-nav {
+        margin: 0;
+        padding: 0;
+        
+        margin-top: 20px;
+    }
+
+    .h-nav-ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .h-nav-ul-li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .toggle-btn {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .close-btn {
+        align-self: flex-end;
+        margin: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .links svg{
+        width: 20px;
+        height: 20px;
+    }
+
+    #about,
+    #technologies,
+    #briefcase{
+        scroll-margin-top: 50px;
+    }
+}
