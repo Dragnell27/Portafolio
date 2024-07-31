@@ -1,4 +1,4 @@
-export const Title = ({ text,id }) => {
+export const Title = ({ text, id }) => {
     return (
         <h2 className='subtitle' id={id}>{text}</h2>
     )
@@ -18,7 +18,7 @@ export const Stacks = ({ color, img }) => {
     );
 }
 
-export const StacksList = ({}) => {
+export const StacksList = ({ }) => {
     const skills = [
         {
             color: '#58a',
@@ -86,27 +86,29 @@ export const StacksList = ({}) => {
     return (
         <div className='container-skills'>
             {skills.map(skill => (
-                <Stacks  key={skill.img} color={skill.color} img={skill.img} />
+                <Stacks key={skill.img} color={skill.color} img={skill.img} />
             ))}
         </div>
     );
 }
 
-export const Cards = ({}) =>{
+export const Cards = ({ img, description, technologies,git,url}) => {
 
     return (
-            <div className="card-project">
-                    <img src="proyectos/innovatechcol.png" alt="" />
-                    <div className="card-hover">
-                    <p>Plataforma web para la venta de productos tecnológicos.</p>
-                    <div className="project-stack">PHP</div>
-                    <div className="project-stack">Laravel</div>
-                    <div className="project-stack">MySQL</div>
-                    <div className="project-stack">Bootstrap</div>
-                    <div className="project-stack">JavaScript</div>
-                        <a href="" className="project-stack">git</a>
-                        <a href="" className="project-stack">Sitio web</a>
-                    </div>
+        <div className="card-project">
+            <img src={img} alt={img} />
+            <p>{description}</p>
+            <div className="card-technologies-project">
+                {
+                    technologies.map(tech => (
+                        <div key={tech} className="project-stack">{tech}</div>
+                    ))
+                }
             </div>
+            <div className="card-hover">
+                <a href={git} className="project-stack">git</a>
+                <a href={url} className="project-stack">Sitio web</a>
+            </div>
+        </div>
     );
 }
