@@ -260,7 +260,7 @@ body {
 
 .card-hover{
     width: 100%;
-    height: 20%;
+    height: 15%;
     object-fit: cover;
     border-radius: 10px;
     position: absolute;
@@ -270,19 +270,25 @@ body {
     background: #333e;
     transition: top .3s;
     display: flex;
-    
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .card-project:hover .card-hover{
-    top: 80%;
+    top: 85%;
 }
 
 .card-technologies-project{
     text-align: center;
 
+}
+
+.card-hover .project-stack{
+    text-decoration: none;
+    color: #fff;
+    
 }
 
 @keyframes typing {

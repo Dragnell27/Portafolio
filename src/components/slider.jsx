@@ -13,7 +13,8 @@ export const Slider = ({ }) => {
                             <h2 className='occupation'>Desarrollador Full Stack</h2>
                             <div className='professional-links'>
                                 <a className='cv' href='../documents/cv.pdf' target='_blank'>CV</a>
-                                <a className='links' href='https://github.com/Dragnell27' target='_blank'><svg
+                                <a className='links' href='https://github.com/Dragnell27' target='_blank'>
+                                <svg
                                     xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor'
                                     className='bi bi-github' viewBox='0 0 16 16'>
                                     <path

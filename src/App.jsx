@@ -20,8 +20,8 @@ function App() {
       img: 'proyectos/MiChat.png',
       description: 'Aplicación de chat en tiempo real que utiliza Socket.IO para mensajería instantánea. Incluye inicio de sesión seguro con prevención de sesiones duplicadas.',
       technologies: ['Socket.io', 'MySQL', 'PHP', 'JavaScript', 'Node'],
-      git: 'https://github.com/Dragnell27/InnovaTech-web',
-      url: 'https://innovatechcol.com.co/'
+      git: 'https://github.com/Dragnell27/MiChat',
+      url: 'https://michat-production-a5c7.up.railway.app/'
     },
   ]
   return (
