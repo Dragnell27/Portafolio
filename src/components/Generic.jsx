@@ -25,7 +25,7 @@ export const StacksList = ({ }) => {
             img: 'java'
         },
         {
-            color: '#a33',
+            color: '#f00',
             img: 'oracle'
         },
         {
@@ -55,6 +55,10 @@ export const StacksList = ({ }) => {
         {
             color: '#77b',
             img: 'php'
+        },
+        {
+            color: '#F43',
+            img: 'Laravel'
         },
         {
             color: '#E80',
