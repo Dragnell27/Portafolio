@@ -191,6 +191,8 @@ body {
 
 .container-skills{
     width: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 60px;
@@ -200,9 +202,9 @@ body {
     display: inline-block;
     border-radius: 50%;
     box-sizing: border-box; 
-    width: 100px;
-    height: 100px;
-    margin: 0 20px;
+    width: 60px;
+    height: 60px;
+    margin: 0 15px;
     margin-top: 15px;
 }
 
@@ -228,24 +230,24 @@ body {
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    box-sizing: border-box;
 }
 
-.card-project img{
+.card-project > img{
     width: 100%;
     height: 40%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 5px;
     z-index: 10;
 }
 
 .project-stack{
+    text-align: center;
     display: inline-block;
-    margin-right: 5px;
     margin-top: 5px;
     background: #f82;
-    padding: 5px 15px;
+    padding: 0px 10px;
     border-radius: 10px;
-    z-index: 10;
 }
 
 .container_card{
@@ -281,15 +283,109 @@ body {
 
 .card-technologies-project{
     text-align: center;
-
+    width: calc(100% - 20px);
+    position: absolute;
+    top: 78%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .card-hover .project-stack{
     text-decoration: none;
     color: #fff;
-    
+    padding: 5px 20px;
 }
 
+
+.footer{
+    border-top: solid 1px #fff3;
+    width: 100vw !important;
+    background: #111;
+    padding: 10px 40px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer .footer-cont{
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    gap: 5px;
+    color: #555;
+}
+
+.footer-cont img{
+    width: 24px;
+    color: #555;
+}
+
+.ft{
+    padding: 0;
+    margin: 7px 0px;
+}
+
+@keyframes blink {
+    to {
+        border-left: 3px solid #111;
+    }
+}
+
+@keyframes erase {
+    
+    0%,
+    10% {
+        content: 'Crearlo';
+    }
+    
+    11%,
+    20% {
+        content: 'Elaborarlo';
+    }
+
+    21%,
+    30% {
+        content: 'Construirlo';
+    }
+    
+    31%,
+    40% {
+        content: 'Realizarlo';
+    }
+    
+    41%,
+    50% {
+        content: 'Implementarlo';
+    }
+    
+    51%,
+    60% {
+        content: 'Ejecutarlo';
+    }
+    
+    61%,
+    70% {
+        content: 'Producirlo';
+    }
+
+    71%,
+    80% {
+        content: 'Diseñarlo';
+    }
+    
+    81%,
+    90% {
+        content: 'Desarrollarlo';
+    }
+
+    91%,
+    100% {
+        content: 'Estructurarlo';
+    }
+}
 @keyframes typing {
 
     5%,
@@ -335,64 +431,5 @@ body {
     90%,
     92.5% {
         width: calc(100% + 8px);
-    }
-}
-
-@keyframes blink {
-    to {
-        border-left: 3px solid #111;
-    }
-}
-
-@keyframes erase {
-
-    0%,
-    10% {
-        content: 'Crearlo';
-    }
-
-    11%,
-    20% {
-        content: 'Elaborarlo';
-    }
-
-    21%,
-    30% {
-        content: 'Construirlo';
-    }
-
-    31%,
-    40% {
-        content: 'Realizarlo';
-    }
-
-    41%,
-    50% {
-        content: 'Implementarlo';
-    }
-
-    51%,
-    60% {
-        content: 'Ejecutarlo';
-    }
-
-    61%,
-    70% {
-        content: 'Producirlo';
-    }
-
-    71%,
-    80% {
-        content: 'Diseñarlo';
-    }
-
-    81%,
-    90% {
-        content: 'Desarrollarlo';
-    }
-
-    91%,
-    100% {
-        content: 'Estructurarlo';
     }
 }

@@ -13,7 +13,7 @@ export const Nav = ({ }) => {
                     offset={-80}
                     className='h-nav-ul-li'
                 >
-                    <li className='h-nav-ul-li'><a className='h-options' href=''>Inicio</a></li>
+                    <li className='h-nav-ul-li'>Inicio</li>
                 </Link>
 
                 <Link
@@ -23,16 +23,7 @@ export const Nav = ({ }) => {
                     offset={-80}
                     className='h-nav-ul-li'
                 >
-                    <li className='h-nav-ul-li'><a className='h-options' href=''>Sobre mi</a></li>
-                </Link>
-                <Link
-                    to="technologies"
-                    smooth={true}
-                    duration={500}
-                    offset={-80}
-                    className='h-nav-ul-li'
-                >
-                    <li className='h-nav-ul-li'><a className='h-options' href=''>Tecnologías</a></li>
+                    <li className='h-nav-ul-li'>Sobre mi</li>
                 </Link>
                 <Link
                     to="briefcase"
@@ -41,7 +32,25 @@ export const Nav = ({ }) => {
                     offset={-80}
                     className='h-nav-ul-li'
                 >
-                    <li className='h-nav-ul-li'><a className='h-options' href=''>Portafolio</a></li>
+                    <li className='h-nav-ul-li'>Proyectos</li>
+                </Link>
+                {/* <Link
+                    to="experience"
+                    smooth={true}
+                    duration={500}
+                    offset={-80}
+                    className='h-nav-ul-li'
+                >
+                    <li className='h-nav-ul-li'>Experiencia</li>
+                </Link> */}
+                <Link
+                    to="technologies"
+                    smooth={true}
+                    duration={500}
+                    offset={-80}
+                    className='h-nav-ul-li'
+                >
+                    <li className='h-nav-ul-li'>Tecnologías</li>
                 </Link>
             </ul>
         </nav>

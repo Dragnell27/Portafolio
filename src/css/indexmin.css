@@ -37,18 +37,10 @@
         height: 23px;
         box-sizing: border-box;
         cursor: pointer;
+        padding: 0 5px;
     }
-    
-    .h-options {
-        display: block;
-        color: #fff;
-        text-decoration: none;
-        padding: 0 20px;
-        height: 95%;
-    }
-    
-    .h-options:hover {
+
+    .h-nav-ul-li:hover{
         border-bottom: 1px solid #f92;
     }
-    
 }
