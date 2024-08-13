@@ -116,14 +116,14 @@ export const Cards = ({ img, title, description, technologies, git, url }) => {
         margin: "3px 0",
     };
 
-    const parrafo = {
+    const Paragraph = {
         marginTop: "10px",
     };
     return (
         <div className="card-project">
             <img src={img} alt={img} />
             <h4 style={sub_titulo}>{title}</h4>
-            <p style={parrafo}>{description}</p>
+            <p style={Paragraph}>{description}</p>
             <div className="card-technologies-project">
                 {technologies.map((tech) => (
                     <div key={tech} className="project-stack">
@@ -238,7 +238,7 @@ export const Experience = () => {
         bottom: "0",
         right: "0",
         padding: "5px 15px",
-        backgroundColor: "#f82",
+        backgroundColor: "#f72",
         color: "#fff",
         fontSize: "11px",
         borderRadius: "15px",

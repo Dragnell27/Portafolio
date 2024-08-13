@@ -64,7 +64,7 @@ body {
 .info .cv {
     display: inline-block;
     text-decoration: none;
-    background: #999f;
+    background: #555;
     border-radius: 40px;
     color: #fff;
     padding: 10px 10px;
@@ -75,7 +75,7 @@ body {
 
 .links{
     text-decoration: none;
-    color: #999f;
+    color: #555;
 }
 
 .links:hover{
@@ -311,7 +311,7 @@ body {
     display: flex;
     justify-content: start;
     gap: 5px;
-    color: #555;
+    color: #a3a3a3;
 }
 
 .footer-cont img{

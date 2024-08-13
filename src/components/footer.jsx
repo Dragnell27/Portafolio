@@ -29,7 +29,7 @@ export const Footer_items = () => {
     return (
         items.map((item,i)=>(
             <div key={i} className="footer-cont">
-                <img
+                <img alt={item.icon}
                     src={`icon/${item.icon}`}
                 />
                 <p className="ft">{item.pr}</p>

@@ -6,52 +6,66 @@ export const Nav = ({ }) => {
     return (
         <nav className='h-nav'>
             <ul className='h-nav-ul'>
-                <Link
-                    to="home"
-                    smooth={true}
-                    duration={500}
-                    offset={-80}
-                    className='h-nav-ul-li'
-                >
-                    <li className='h-nav-ul-li'>Inicio</li>
-                </Link>
-
-                <Link
-                    to="about"
-                    smooth={true}
-                    duration={500}
-                    offset={-80}
-                    className='h-nav-ul-li'
-                >
-                    <li className='h-nav-ul-li'>Sobre mi</li>
-                </Link>
-                <Link
-                    to="briefcase"
-                    smooth={true}
-                    duration={500}
-                    offset={-80}
-                    className='h-nav-ul-li'
-                >
-                    <li className='h-nav-ul-li'>Proyectos</li>
-                </Link>
-                <Link
-                    to="experience"
-                    smooth={true}
-                    duration={500}
-                    offset={-80}
-                    className='h-nav-ul-li'
-                >
-                    <li className='h-nav-ul-li'>Experiencia</li>
-                </Link>
-                <Link
-                    to="technologies"
-                    smooth={true}
-                    duration={500}
-                    offset={-80}
-                    className='h-nav-ul-li'
-                >
-                    <li className='h-nav-ul-li'>Tecnologías</li>
-                </Link>
+                <li className='h-nav-ul-li'>
+                    <Link
+                        to="home"
+                        smooth={true}
+                        duration={500}
+                        offset={-80}
+                        className='h-nav-ul-li'
+                        aria-label='Home'
+                    >
+                        Inicio
+                    </Link>
+                </li>
+                <li className='h-nav-ul-li'>
+                    <Link
+                        to="about"
+                        smooth={true}
+                        duration={500}
+                        offset={-80}
+                        className='h-nav-ul-li'
+                        aria-label='About'
+                    >
+                        Sobre mi
+                    </Link>
+                </li>
+                <li className='h-nav-ul-li'>
+                    <Link
+                        to="briefcase"
+                        smooth={true}
+                        duration={500}
+                        offset={-80}
+                        className='h-nav-ul-li'
+                        aria-label='Projects'
+                    >
+                        Proyectos
+                    </Link>
+                </li>
+                <li className='h-nav-ul-li'>
+                    <Link
+                        to="experience"
+                        smooth={true}
+                        duration={500}
+                        offset={-80}
+                        className='h-nav-ul-li'
+                        aria-label='Experience'
+                    >
+                        Experiencia
+                    </Link>
+                </li>
+                <li className='h-nav-ul-li'>
+                    <Link
+                        to="technologies"
+                        smooth={true}
+                        duration={500}
+                        offset={-80}
+                        className='h-nav-ul-li'
+                        aria-label='Technologies'
+                    >
+                        Tecnologías
+                    </Link>
+                </li>
             </ul>
         </nav>
     );
