@@ -214,7 +214,7 @@ export const Experience = () => {
             company: "IP Total Software",
             role: "Desarrollador Frontend y Soporte TI",
             date: "Octubre 2023 - Actualidad",
-            description: ["Realizo trabajos de soporte informático tanto para clientes y miembros de la compañía donde para el cliente debo de realizar soluciones ágiles y rápidas las cuales conllevan a realizar consultas de oracle para la actualización masiva de información y poder continuar con las operaciones diarias realizadas en la plataforma web de Emalaea y para la compañía cumplo con el manejo de los repositorios de DEV, QA y PROD y pequeñas modificaciones al frontend para que la pagina sea mas responsiva."],
+            description: ["Realizo soporte informático tanto para clientes como para miembros de la compañía. Para los clientes, ofrezco soluciones ágiles y rápidas, que incluyen la realización de consultas en Oracle para la actualización masiva de datos, asegurando así la continuidad de las operaciones diarias en la plataforma web de Emalaea. Además, gestiono los repositorios de desarrollo (DEV), pruebas (QA) y producción (PROD), y realizo ajustes menores en el frontend para mejorar la capacidad de respuesta de la página."],
         },
         {
             company: "Innova Tech de Occidente",
