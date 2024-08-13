@@ -173,25 +173,17 @@ export const Projects = () => {
             img: "proyectos/innovatechcolweb.png",
             title: "Innova Tech Web",
             description: "Plataforma web para la venta de productos tecnológicos con implementación de carrito de compras",
-            technologies: ["html","css","laravel", "mysql", "bootstrap", "javascript", "jquery"],
+            technologies: ["html", "css", "laravel", "mysql", "bootstrap", "javascript", "jquery"],
             git: "https://github.com/Dragnell27/InnovaTech-web",
-            url: "",
+            url: ""
         },
         {
             img: "proyectos/innovatechcol.png",
             title: "Innova Tech Desktop",
             description: "Es una aplicación de escritorio donde se realizan tareas de gestión de productos, se pueden crear detalles parametrizados,",
             technologies: ["mysql", "css", "java",],
-            git: "https://github.com/Dragnell27/InnovaTech-web",
-            url: "",
-        },
-        {
-            img: "proyectos/innovatechcol.png",
-            title: "Innova Tech Desktop",
-            description: "Es una aplicación de escritorio donde se realizan tareas de gestión de productos, se pueden crear detalles parametrizados,",
-            technologies: ["mysql", "css", "java",],
-            git: "https://github.com/Dragnell27/InnovaTech-web",
-            url: "",
+            git: "https://github.com/Dragnell27/InnovaTech-Desktop",
+            url: ""
         },
         {
             img: "proyectos/MiChat.png",
@@ -220,29 +212,69 @@ export const Experience = () => {
     const experience = [
         {
             company: "IP Total Software",
-            date: "Octubre 2022 - Actualidad",
-            description: "Realizo trabajos de soporte informático tanto para clientes y miembros de la compañía donde para el cliente debo de realizar soluciones ágiles y rápidas las cuales conllevan a realizar consultas de oracle para la actualización masiva de información y poder continuar con las operaciones diarias realizadas en la plataforma web de Emalaea y para la compañía cumplo con el manejo de los repositorios de DEV, QA y PROD y pequeñas modificaciones al frontend para que la pagina sea mas responsiva.",
-        }
+            role: "Desarrollador Frontend y Soporte TI",
+            date: "Octubre 2023 - Actualidad",
+            description: ["Realizo trabajos de soporte informático tanto para clientes y miembros de la compañía donde para el cliente debo de realizar soluciones ágiles y rápidas las cuales conllevan a realizar consultas de oracle para la actualización masiva de información y poder continuar con las operaciones diarias realizadas en la plataforma web de Emalaea y para la compañía cumplo con el manejo de los repositorios de DEV, QA y PROD y pequeñas modificaciones al frontend para que la pagina sea mas responsiva."],
+        },
+        {
+            company: "Innova Tech de Occidente",
+            role: "(Freelance) Desarrollador Fullstack y DBA",
+            date: "Abril 2022 - Agosto 2023",
+            description: ["Como líder de desarrollo en el proyecto de escritorio, supervisé la implementación de funciones clave como la gestión de productos, la realización de pedidos con envío de notificaciones por correo electrónico a proveedores previamente registrados, la respuesta a PQRS (Preguntas, Quejas, Reclamos y Sugerencias), así como la administración de categorías, colores y marcas. Además, me encargué de integrar estos elementos con los productos seleccionados, asegurando un flujo de trabajo eficiente y cohesivo.", "En la parte web del proyecto, fui responsable de construir la lógica detrás del manejo de usuarios, la creación y gestión de direcciones de envío, y la funcionalidad de añadir productos a la lista de deseos. Asimismo, desempeñé un papel crucial en la creación y acoplamiento de la base de datos para ambos proyectos, garantizando una estructura de datos robusta y una integración fluida entre las aplicaciones de escritorio y web."]
+        },
     ]
+
+    const container = {
+        marginBottom: "40px",
+        borderRadius: "5px",
+    }
+
+    const role = {
+        position: "relative"
+    }
+
+    const date = {
+        position: "absolute",
+        bottom: "0",
+        right: "0",
+        padding: "5px 15px",
+        backgroundColor: "#f82",
+        color: "#fff",
+        fontSize: "11px",
+        borderRadius: "15px",
+    }
+    const sub_title = {
+        margin: "6px 0",
+        marginBottom: "10px",
+        padding: "0"
+    }
     return (
         <>
-
             {
                 experience.map((item, i) => (
-                    <div key={i} className="experience">
-                        <h3>{item.company}</h3>
-                        {/* <p>{item.company}</p> */}
-                        <p>{item.description}</p>
-                        <span>{item.date}</span>
+                    <div key={i} className="experience" style={container}>
+                        <div style={role}>
+                            <h3 style={sub_title}>{item.company}</h3>
+                            <span style={date}>{item.date}</span>
+                        </div>
+                        <h4 style={sub_title}>{item.role}</h4>
+                        <Paragraph description={item.description} />
                     </div>
                 ))
             }
-            {/* <div className="">
-                <h3>IP Total software</h3>
-                <p>Realizo trabajos de soporte informático tanto para clientes y miembros de la compañía donde para el cliente debo de realizar soluciones ágiles y rápidas las cuales conllevan a realizar consultas de oracle para la actualización masiva de información y poder continuar con las operaciones diarias realizadas en la plataforma web de Emalaea y para la compañía cumplo con el manejo de los repositorios de DEV, QA y PROD y pequeñas modificaciones al frontend para que la pagina sea mas responsiva.
-                </p>
-                <span>19/octubre - Actualidad</span>
-            </div> */}
         </>
     );
-} 
+}
+
+export const Paragraph = ({ description }) => {
+    const paragraph = {
+        fontSize: "14px"
+    }
+    return (
+        <>
+            {description.map((desc, index) => (
+                <p style={paragraph} key={index}>{desc}</p>
+            ))}
+        </>
+    );
+}
