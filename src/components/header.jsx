@@ -13,7 +13,7 @@ export const Nav = ({ }) => {
                         duration={500}
                         offset={-80}
                         className='h-nav-ul-li'
-                        aria-label='Home'
+                        arial-label='Home'
                     >
                         Inicio
                     </Link>
@@ -24,8 +24,7 @@ export const Nav = ({ }) => {
                         smooth={true}
                         duration={500}
                         offset={-80}
-                        className='h-nav-ul-li'
-                        aria-label='About'
+                        arial-label='About'
                     >
                         Sobre mi
                     </Link>
@@ -36,8 +35,7 @@ export const Nav = ({ }) => {
                         smooth={true}
                         duration={500}
                         offset={-80}
-                        className='h-nav-ul-li'
-                        aria-label='Projects'
+                        arial-label='Projects'
                     >
                         Proyectos
                     </Link>
@@ -48,8 +46,7 @@ export const Nav = ({ }) => {
                         smooth={true}
                         duration={500}
                         offset={-80}
-                        className='h-nav-ul-li'
-                        aria-label='Experience'
+                        arial-label='Experience'
                     >
                         Experiencia
                     </Link>
@@ -60,8 +57,7 @@ export const Nav = ({ }) => {
                         smooth={true}
                         duration={500}
                         offset={-80}
-                        className='h-nav-ul-li'
-                        aria-label='Technologies'
+                        arial-label='Technologies'
                     >
                         Tecnologías
                     </Link>
