@@ -34,7 +34,7 @@ export const Nav = ({ }) => {
                 >
                     <li className='h-nav-ul-li'>Proyectos</li>
                 </Link>
-                {/* <Link
+                <Link
                     to="experience"
                     smooth={true}
                     duration={500}
@@ -42,7 +42,7 @@ export const Nav = ({ }) => {
                     className='h-nav-ul-li'
                 >
                     <li className='h-nav-ul-li'>Experiencia</li>
-                </Link> */}
+                </Link>
                 <Link
                     to="technologies"
                     smooth={true}

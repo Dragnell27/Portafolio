@@ -1,30 +1,39 @@
 export const Footer = () => {
     return (
         <footer className="footer">
-            <div className="footer-cont">
-                <img
-                    src={`icon/email.svg`}
-                />
-                <p className="ft">jaduvase27@gmail.com</p>
-            </div>
-            <div className="footer-cont">
-                <img
-                    src={`icon/github.svg`}
-                />
-                <p className="ft">www.github.com/Dragnell27</p>
-            </div>
-            <div className="footer-cont">
-                <img
-                    src={`icon/linkedin.svg`}
-                />
-                <p className="ft">www.linkedin.com/in/jvalencias</p>
-            </div>
-            <div className="footer-cont">
-                <img
-                    src={`icon/location.svg`}
-                />
-                <p className="ft">Cali, Valle del Cauca</p>
-            </div>
+            <Footer_items/>
         </footer>
     )
+}
+
+export const Footer_items = () => {
+    const items = [
+        {
+            pr : 'jaduvase27@gmail.com',
+            icon : 'email.svg'
+        },
+        {
+            pr : 'github.com/Dragnell27',
+            icon : 'github.svg'
+        },
+        {
+            pr : 'linkedin.com/in/jvalencias',
+            icon : 'linkedin.svg'
+        },
+        {
+            pr : 'Cali, Valle del Cauca',
+            icon : 'location.svg'
+        },
+    ]
+
+    return (
+        items.map((item,i)=>(
+            <div key={i} className="footer-cont">
+                <img
+                    src={`icon/${item.icon}`}
+                />
+                <p className="ft">{item.pr}</p>
+            </div>
+        ))
+    );
 }

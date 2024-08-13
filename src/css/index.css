@@ -5,6 +5,7 @@ body {
     background-color: #111;
     color: #fff;
     font-family: sans-serif;
+    font-size: 14px;
 }
 
 .img-container {
@@ -96,17 +97,14 @@ body {
     padding: 0;
 }
 
-.experience {
+.main {
     margin: auto;
     margin-bottom: 10vh;
-    width: 80vw;
+    width: 70vw;
 }
 
 .about {
-    box-shadow: 0px 0px 10px 0px #333;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 10px;
+    border-bottom: solid 1px #555;
 }
 
 .animated {
@@ -185,7 +183,6 @@ body {
 .subtitle{
     color: #f82;
     text-align: center;
-    text-shadow: 0px 0px 3px #f92;
     font-weight: 100;
 }
 
@@ -254,7 +251,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     margin-top: 30px;
     gap: 20px;
 }

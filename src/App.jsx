@@ -4,7 +4,7 @@ import './css/indexmin.css';
 import { Headers } from './components/header.jsx';
 import { Slider } from './components/slider.jsx';
 import { About } from './components/about.jsx';
-import { Projects, StacksList, Title } from './components/Generic.jsx';
+import { Experience, Projects, StacksList, Title } from './components/Generic.jsx';
 import { Footer } from './components/footer.jsx';
 
 
@@ -13,11 +13,12 @@ function App() {
     <>
       <Headers />
       <Slider />
-      <main className='experience'>
+      <main className='main'>
         <About />
+        <Title text={'Experiencia'} id={'experience'}></Title>
+        <Experience/>
         <Title text={'Proyectos'} id={'briefcase'} />
         <Projects />
-        {/* <Title text={'Experiencia'} id={'experience'}></Title> */}
         <Title text={'Tecnologías'} id={'technologies'}></Title>
         <StacksList />
       </main>

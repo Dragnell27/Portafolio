@@ -170,10 +170,26 @@ export const Cards = ({ img, title, description, technologies, git, url }) => {
 export const Projects = () => {
     const infoCard = [
         {
-            img: "proyectos/innovatechcol.png",
+            img: "proyectos/innovatechcolweb.png",
             title: "Innova Tech Web",
             description: "Plataforma web para la venta de productos tecnológicos con implementación de carrito de compras",
-            technologies: ["laravel", "mysql", "bootstrap", "javascript", "jquery"],
+            technologies: ["html","css","laravel", "mysql", "bootstrap", "javascript", "jquery"],
+            git: "https://github.com/Dragnell27/InnovaTech-web",
+            url: "",
+        },
+        {
+            img: "proyectos/innovatechcol.png",
+            title: "Innova Tech Desktop",
+            description: "Es una aplicación de escritorio donde se realizan tareas de gestión de productos, se pueden crear detalles parametrizados,",
+            technologies: ["mysql", "css", "java",],
+            git: "https://github.com/Dragnell27/InnovaTech-web",
+            url: "",
+        },
+        {
+            img: "proyectos/innovatechcol.png",
+            title: "Innova Tech Desktop",
+            description: "Es una aplicación de escritorio donde se realizan tareas de gestión de productos, se pueden crear detalles parametrizados,",
+            technologies: ["mysql", "css", "java",],
             git: "https://github.com/Dragnell27/InnovaTech-web",
             url: "",
         },
@@ -198,17 +214,35 @@ export const Projects = () => {
     );
 }
 
+
+
 export const Experience = () => {
+    const experience = [
+        {
+            company: "IP Total Software",
+            date: "Octubre 2022 - Actualidad",
+            description: "Realizo trabajos de soporte informático tanto para clientes y miembros de la compañía donde para el cliente debo de realizar soluciones ágiles y rápidas las cuales conllevan a realizar consultas de oracle para la actualización masiva de información y poder continuar con las operaciones diarias realizadas en la plataforma web de Emalaea y para la compañía cumplo con el manejo de los repositorios de DEV, QA y PROD y pequeñas modificaciones al frontend para que la pagina sea mas responsiva.",
+        }
+    ]
     return (
         <>
-            <div>
-                <div>
-                    
-                </div>
-                <div>
-                    
-                </div>
-            </div>
+
+            {
+                experience.map((item, i) => (
+                    <div key={i} className="experience">
+                        <h3>{item.company}</h3>
+                        {/* <p>{item.company}</p> */}
+                        <p>{item.description}</p>
+                        <span>{item.date}</span>
+                    </div>
+                ))
+            }
+            {/* <div className="">
+                <h3>IP Total software</h3>
+                <p>Realizo trabajos de soporte informático tanto para clientes y miembros de la compañía donde para el cliente debo de realizar soluciones ágiles y rápidas las cuales conllevan a realizar consultas de oracle para la actualización masiva de información y poder continuar con las operaciones diarias realizadas en la plataforma web de Emalaea y para la compañía cumplo con el manejo de los repositorios de DEV, QA y PROD y pequeñas modificaciones al frontend para que la pagina sea mas responsiva.
+                </p>
+                <span>19/octubre - Actualidad</span>
+            </div> */}
         </>
     );
 } 
