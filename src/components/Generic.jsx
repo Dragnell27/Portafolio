@@ -180,7 +180,7 @@ export const Projects = () => {
         {
             img: "proyectos/innovatechcol.png",
             title: "Innova Tech Desktop",
-            description: "Aplicación de escritorio que incluye gestión de productos, envíos de ofertas y repostes masivos a clientes y administración de parámetros como categorías, colores y marcas, facilitando una organización y control detallado del inventario.",
+            description: "Aplicación de escritorio que incluye gestión de productos, envíos de ofertas y reportes masivos a clientes, cuenta con gestión de parámetros y el envío de pedidos a proveedores.",
             technologies: ["mysql", "css", "java",],
             git: "https://github.com/Dragnell27/InnovaTech-Desktop",
             url: ""
