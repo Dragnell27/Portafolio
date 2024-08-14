@@ -180,7 +180,7 @@ export const Projects = () => {
         {
             img: "proyectos/innovatechcol.png",
             title: "Innova Tech Desktop",
-            description: "Es una aplicación de escritorio donde se realizan tareas de gestión de productos, se pueden crear detalles parametrizados,",
+            description: "Desarrollé módulos para una aplicación de escritorio que incluyen servicios de autenticación, gestión de productos y administración de parámetros como categorías, colores, marcas y tamaños, facilitando una organización y control detallado del inventario.",
             technologies: ["mysql", "css", "java",],
             git: "https://github.com/Dragnell27/InnovaTech-Desktop",
             url: ""
@@ -238,8 +238,8 @@ export const Experience = () => {
         bottom: "0",
         right: "0",
         padding: "5px 15px",
-        backgroundColor: "#f72",
-        color: "#fff",
+        backgroundColor: "#f82",
+        color: "#000",
         fontSize: "11px",
         borderRadius: "15px",
     }
