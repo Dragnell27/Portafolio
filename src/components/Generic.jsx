@@ -137,11 +137,11 @@ export const Cards = ({ img, title, description, technologies, git, url }) => {
                 ))}
             </div>
             <div className="card-hover">
-                <a href={git} className="project-stack" target="_blank">
+                <a href={git} className="project-url" target="_blank">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
+                        width="25"
+                        height="25"
                         fill="currentColor"
                         className="bi bi-github"
                         viewBox="0 0 16 16"
@@ -150,11 +150,11 @@ export const Cards = ({ img, title, description, technologies, git, url }) => {
                     </svg>
                 </a>
                 {url && (
-                    <a href={url} className="project-stack" target="_blank">
+                    <a href={url} className="project-url" target="_blank">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
+                            width="25"
+                            height="25"
                             fill="currentColor"
                             viewBox="0 0 16 16"
                         >
@@ -237,10 +237,11 @@ export const Experience = () => {
         position: "absolute",
         bottom: "0",
         right: "0",
-        padding: "5px 15px",
+        padding: "2px 15px",
         backgroundColor: "#f82",
         color: "#000",
         fontSize: "11px",
+        fontWeight: 900,
         borderRadius: "15px",
     }
     const sub_title = {
