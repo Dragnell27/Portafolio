@@ -172,7 +172,7 @@ export const Projects = () => {
         {
             img: "proyectos/innovatechcolweb.png",
             title: "Innova Tech Web",
-            description: "Plataforma web para la venta de productos tecnológicos con implementación de carrito de compras",
+            description: "Plataforma web para la venta de productos tecnológicos con implementación de carrito de compras, lista de deseos, gestión de multiples direcciones de envió por cliente y búsqueda de productos eficiente.",
             technologies: ["html", "css", "laravel", "mysql", "bootstrap", "javascript", "jquery"],
             git: "https://github.com/Dragnell27/InnovaTech-web",
             url: ""
