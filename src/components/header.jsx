@@ -6,57 +6,50 @@ export const Nav = ({ }) => {
     return (
         <nav className='h-nav'>
             <ul className='h-nav-ul'>
-                <li className='h-nav-ul-li'>
-                    <Link
-                        to="home"
-                        smooth={true}
-                        duration={500}
-                        offset={-80}
-                        className='h-nav-ul-li'
-                        arial-label='Home'
-                    >
-                        Inicio
-                    </Link>
-                </li>
-                <li className='h-nav-ul-li'>
+                <li className=''>
                     <Link
                         to="about"
                         smooth={true}
                         duration={500}
                         offset={-80}
+                        className='h-nav-ul-li'
                         arial-label='About'
                     >
                         Sobre mi
                     </Link>
                 </li>
-                <li className='h-nav-ul-li'>
-                    <Link
-                        to="briefcase"
-                        smooth={true}
-                        duration={500}
-                        offset={-80}
-                        arial-label='Projects'
-                    >
-                        Proyectos
-                    </Link>
-                </li>
-                <li className='h-nav-ul-li'>
+                <li className=''>
                     <Link
                         to="experience"
                         smooth={true}
                         duration={500}
                         offset={-80}
+                        className='h-nav-ul-li'
                         arial-label='Experience'
                     >
                         Experiencia
                     </Link>
                 </li>
-                <li className='h-nav-ul-li'>
+                <li className=''>
+                    <Link
+                        to="briefcase"
+                        smooth={true}
+                        duration={500}
+                        offset={-80}
+                        className='h-nav-ul-li'
+                        arial-label='Projects'
+                    >
+                        Proyectos
+                    </Link>
+                </li>
+
+                <li className=''>
                     <Link
                         to="technologies"
                         smooth={true}
                         duration={500}
                         offset={-80}
+                        className='h-nav-ul-li'
                         arial-label='Technologies'
                     >
                         Tecnologías
@@ -75,9 +68,23 @@ export const Headers = ({ }) => {
         setIsToggled(!isToggled);
     };
 
+    const cursor = {
+        cursor: 'pointer',
+        color: '#000'
+    }
     return (
         <>
-            <div className='logo'><a href='#'>JD</a></div>
+            <Link
+                to="home"
+                smooth={true}
+                duration={500}
+                offset={-80}
+                arial-label='Home'
+                style={cursor}
+                className='logo'
+            >
+                JD
+            </Link>
             <header className='header'>
                 <Nav />
             </header>
