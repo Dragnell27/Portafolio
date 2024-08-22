@@ -14,6 +14,7 @@ export const Nav = ({ }) => {
                         offset={-80}
                         className='h-nav-ul-li'
                         arial-label='About'
+                        href='#'
                     >
                         Sobre mi
                     </Link>
@@ -26,6 +27,7 @@ export const Nav = ({ }) => {
                         offset={-80}
                         className='h-nav-ul-li'
                         arial-label='Experience'
+                        href='#'
                     >
                         Experiencia
                     </Link>
@@ -38,6 +40,7 @@ export const Nav = ({ }) => {
                         offset={-80}
                         className='h-nav-ul-li'
                         arial-label='Projects'
+                        href='#'
                     >
                         Proyectos
                     </Link>
@@ -51,6 +54,7 @@ export const Nav = ({ }) => {
                         offset={-80}
                         className='h-nav-ul-li'
                         arial-label='Technologies'
+                        href='#'
                     >
                         Tecnologías
                     </Link>
@@ -82,6 +86,7 @@ export const Headers = ({ }) => {
                 arial-label='Home'
                 style={cursor}
                 className='logo'
+                href='#'
             >
                 JD
             </Link>
