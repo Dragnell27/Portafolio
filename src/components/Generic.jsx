@@ -211,6 +211,12 @@ export const Projects = () => {
 export const Experience = () => {
     const experience = [
         {
+            company: "Infodec - Growth & Profit Solutions",
+            role: "Desarrollador Full Stack",
+            date: "Septiembre 2024 - Actualidad",
+            description: ["Implementación de nuevas funcionalidades y mejoras en sistemas de plataformas de pago, garantizando la seguridad y eficiencia en cada proyecto.", "Trabajo con estándares de seguridad como PCI DSS y las mejores prácticas recomendadas por OWASP API 2023 para garantizar la protección de datos sensibles.","Colaboración con equipos multidisciplinarios para asegurar la integración y rendimiento óptimo de las nuevas características en entornos de alto tráfico y transacciones financieras.","Desarrollo de soluciones escalables y optimización de procesos, entregando proyectos dentro de los plazos establecidos y cumpliendo con los requisitos de calidad."]
+        },
+        {
             company: "IP Total Software",
             role: "Desarrollador Frontend y Soporte TI",
             date: "Octubre 2023 - Septiembre 2024",
@@ -221,12 +227,6 @@ export const Experience = () => {
             role: "(Freelance) Desarrollador Fullstack y DBA",
             date: "Abril 2022 - Agosto 2023",
             description: ["Como líder de desarrollo en el proyecto de escritorio, supervisé la implementación de funciones clave como la gestión de productos, la realización de pedidos con envío de notificaciones por correo electrónico a proveedores previamente registrados, la respuesta a PQRS (Preguntas, Quejas, Reclamos y Sugerencias), así como la administración de categorías, colores y marcas. Además, me encargué de integrar estos elementos con los productos seleccionados, asegurando un flujo de trabajo eficiente y cohesivo.", "En la parte web del proyecto, fui responsable de construir la lógica detrás del manejo de usuarios, la creación y gestión de direcciones de envío, y la funcionalidad de añadir productos a la lista de deseos. Asimismo, desempeñé un papel crucial en la creación y acoplamiento de la base de datos para ambos proyectos, garantizando una estructura de datos robusta y una integración fluida entre las aplicaciones de escritorio y web."]
-        },
-        {
-            company: "Infodec - Growth & Profit Solutions",
-            role: "Desarrollador Full Stack",
-            date: "Septiembre 2024 - Actualidad",
-            description: ["Implementación de nuevas funcionalidades y mejoras en sistemas de plataformas de pago, garantizando la seguridad y eficiencia en cada proyecto.", "Trabajo con estándares de seguridad como PCI DSS y las mejores prácticas recomendadas por OWASP API 2023 para garantizar la protección de datos sensibles.","Colaboración con equipos multidisciplinarios para asegurar la integración y rendimiento óptimo de las nuevas características en entornos de alto tráfico y transacciones financieras.","Desarrollo de soluciones escalables y optimización de procesos, entregando proyectos dentro de los plazos establecidos y cumpliendo con los requisitos de calidad."]
         },
     ]
 
