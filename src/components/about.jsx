@@ -6,9 +6,7 @@ export const About = ({ }) => {
             </section>
             <section className='about'>
                 <h1>Sobre mí</h1>
-                <p>¡Hola! Mi nombre es Jaider Duvan Valencia Segura, desarrollador Full Stack con más de 1 año de experiencia
-                    creando aplicaciones para la automatización de procesos y solución de problemas haciendo uso tecnologías como
-                    Java, PHP y JavaScript. Comprometido con el desarrollo continuo y la creación de soluciones eficientes.
+                <p>Desarrollador Full Stack con más de 3 años de experiencia en la creación de aplicaciones para la automatización de procesos, utilizando tecnologías como Java, PHP, JavaScript y .NET. Con experiencia en la implementación de normas de seguridad como PCI DSS y OWASP API 2023, me enfoco en soluciones eficientes y escalables, manteniendo altos estándares de calidad y entregando proyectos dentro de los plazos establecidos.
                 </p>
             </section>
         </>
